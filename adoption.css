@@ -1,0 +1,57 @@
+h1{
+    margin-top: 120px;
+   margin-left: 30%;
+}
+.gallery {
+  
+  display: flex;
+  
+ 
+  background-color: rgb(185, 152, 152);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+  .gallery img{
+    width:300px;
+    height: 300px;
+  }
+  
+  a{
+    text-decoration: none;
+    
+    
+
+  }
+  .des {
+    
+ padding: 14px 150px;
+    text-align: center;
+    background:#85929E;
+    font-family:impact;
+  }
+  .petPic{
+    width: 130px;
+    height: 150px;
+  }
+  .confButton{
+    padding: 12px 10px;
+    background-color: aqua;
+  }
+  .container{
+    display: inline-block;
+  }
+  main{
+  margin-top: 100px;
+  height: 100%;
+  
+  background: white;
+ 
+  width: 100vw;
+  }
+  .ado{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    margin-left: 100px;
+  }
+  

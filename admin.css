@@ -1,0 +1,38 @@
+.volunteer{
+    
+    
+        
+        background-color: #1d6a63;
+       
+        justify-content: center;
+        align-items: center;
+        
+        
+}
+table{
+   
+    border-collapse:collapse;
+    width : 75%;
+}
+table th{
+    color:black;
+    padding: 10px 30px;
+    }
+table td{
+    color:black;
+font-size: 1.2em;
+padding: 10px 10px;
+text-align: center;
+}
+
+.btn{
+background: #fff;
+color: darkred;
+
+padding: 5px 20px;
+text-decoration: none;
+}
+.btn:hover{
+    background: darkred;
+    color:white;
+}
