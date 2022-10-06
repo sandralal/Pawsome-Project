@@ -17,7 +17,11 @@ $res=mysqli_query($conn,$sql);
     <link rel="stylesheet"
     href="adoption.css">
     
-    
+    <style>
+        header{
+            top:-4px;
+        }
+        </style>
 </head>
 
 <body>

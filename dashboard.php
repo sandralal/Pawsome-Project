@@ -42,14 +42,28 @@ include "header.php";
                 <img src ="petsitting.jpg">
                 <div class="pet">
                 <img src="pet-sit.png">
+
                 
-                <a href="#">BOOK YOUR SLOTS</a></h3>
+                <a class="petbut"href="#">BOOK YOUR SLOTS</a></h3>
                 </div>
+                
+              
             
-         
+
+
+
             <img src="volunteer.jpg">
-            <h3>volunteer now
-            <a href='volunteer.php?userid=<?php echo $userid?>'>VOLUNTEER NOW</a></h3>
+            <div class="vol">
+            <h3>Volunteer now</h3>
+            <span class="vol-text"> Giving back to the community has positive emotional and psychological effects. <br>
+            Working with animals has additional benefits that can boost your overall health.<br>
+            Petting and cuddling pets have been shown to reduce blood pressure and increase levels of serotonin and dopamine. <br>
+            Those hormones help you to relax and manage depression and stress. <br>
+            Studies show that people who frequently play with pets tend to have lower levels of triglycerides and cholesterol.
+            <br><br>
+            Its not too late ...<br>extend your helping hands to our new pet shelter initiative Pawesome</span>
+            <h3><a href='volunteer.php?userid=<?php echo $userid?>'>VOLUNTEER NOW</a></h3>
+            </div>
          
          
     
