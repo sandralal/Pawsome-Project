@@ -69,7 +69,7 @@ else{
 			<div class="sub-log">
 		 <input type="submit" value="Login" name="submit"  ><br>
         </div>
-			<span style='text-align: center; color:white'>Don't have an account?</span><a href="sign_up.php" >   SignUp</a>
+			<span style='text-align: center; color:white'>Don't have an account?hah</span><a href="sign_up.php" >   SignUp</a>
 		</div>
     </div>
     
