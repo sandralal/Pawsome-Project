@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-include("connect.php");
+include("connection.php");
 $userid=$_GET['userid'];
 $sql="select * from pet_details";
 $res=mysqli_query($conn,$sql);

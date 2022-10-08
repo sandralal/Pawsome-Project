@@ -1,6 +1,6 @@
 
 <?php
-include("connect.php");
+include("connection.php");
 $sql="select * from volunteer_tbl inner join sign_up where sign_up.userid=volunteer_tbl.userid";
 $res=mysqli_query($conn,$sql);
 if(isset($_GET['id']))

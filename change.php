@@ -1,5 +1,5 @@
 <?php
-include("connect.php");
+include("connection.php");
 $nm=$_GET['name'];
 $userid=$_GET['userid'];
 $PetID;
