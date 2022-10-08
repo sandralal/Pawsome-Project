@@ -43,7 +43,10 @@ while($row=mysqli_fetch_assoc($res))
     $ado="<h2 class='ado'>Adopted</h2>";
     echo 
     '<div class="container" >
+    <div class="box">
+    
        <img class="petPic" src="'.$image.'">
+       </div>
         <div class="textpic">
         <p>Name:'.$type_pet.'</p>
         

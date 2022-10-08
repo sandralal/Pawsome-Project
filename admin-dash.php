@@ -5,7 +5,7 @@ $countpets="select count(*) from pet_details";
 $petcount=mysqli_query($conn,$countpets);
 $petc=mysqli_fetch_array($petcount);
 
-$countvol="select count(*) from volunteer_table";
+$countvol="select count(*) from volunteer_tbl";
 $volcount=mysqli_query($conn,$countvol);
 $volc=mysqli_fetch_array($volcount);
 

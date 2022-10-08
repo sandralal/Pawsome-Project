@@ -18,11 +18,20 @@ if($numrows!=0){
 
     while($row=mysqli_fetch_assoc($result)){
         $depassw=base64_decode($row['Pass']);
+        $cat=$row['category_user'];
         $name=$row['Name'];
         $userid=$row['userid'];
         if($passw == $depassw)
         {
+            if($cat=='1')
+        {
+
+        
          header("Location:dashboard.php?name=$name&userid=$userid");
+        }
+        else{
+            header("Location:admin-dash.php?name=$name&userid=$userid");
+        }
         }
         else
         {

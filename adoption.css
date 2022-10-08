@@ -40,6 +40,10 @@ h1{
   }
   .container{
     display: inline-block;
+   
+  }
+  .box{
+    border: 10px saddlebrown;
   }
   main{
   margin-top: 100px;
@@ -54,4 +58,28 @@ h1{
     font-size: 50px;
     margin-left: 100px;
   }
-  
+  .onebox{
+    float: left;
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.twobox{
+  float: left;
+    height: 200px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.green{
+  background: linear-gradient(#b2dfdb, #00897b);
+}
+.red{
+  background: linear-gradient(#b2dfdb, #892000);
+}
+.content{
+  display: flex;
+  padding-left: 250px;
+  padding-top: 175px;
+}
