@@ -31,13 +31,22 @@ h1{
     font-family:impact;
   }
   .petPic{
-    width: 130px;
-    height: 150px;
+    height: 250px;
+    width: 300px;
+   object-fit: cover;
   }
-  .confButton{
-    padding: 12px 10px;
-    background-color: aqua;
+  
+  .textpic p{
+    
+    font-size: 30px;
+   color: white;
+   line-height: 60px;
+   font-family: Arial;
   }
+  .text-display{
+    display: inline;
+  }
+  
   .container{
     display: inline-block;
    
@@ -53,33 +62,51 @@ h1{
  
   width: 100vw;
   }
+  .ado2 {
+    font-family: arial;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 5px 30px;
+     margin-left:10px;
+    background-color:white;
+    color:  rgb(19 77 65);
+    border-radius: 20px;
+
+  }
   .ado{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    margin-left: 100px;
+    font-family: arial;
+    font-size: 30px;
+    padding: 5px 80px;
+     margin-left:10px;
+    background-color:white;
+    color:  rgb(19 77 65);
+    border-radius: 20px;
   }
   .onebox{
     float: left;
     height: 400px;
     width: 300px;
-    margin-right: 20px;
+ padding: 30px 25px;
+ align-items: center;
+    margin-right: 50px;
     border-radius: 10px;
+    background-color: rgb(19 77 65);
 }
 .twobox{
   float: left;
-    height: 200px;
+    height: 250px;
     width: 300px;
     margin-right: 20px;
     border-radius: 5px;
 }
-.green{
-  background: linear-gradient(#b2dfdb, #00897b);
-}
-.red{
-  background: linear-gradient(#b2dfdb, #892000);
-}
+
 .content{
-  display: flex;
-  padding-left: 250px;
-  padding-top: 175px;
+  display:inline-block;
+  
+  padding-top: 100px;
+}
+.petPic2
+{
+  height: 350px;
+  width: 250px;
 }

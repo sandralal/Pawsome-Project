@@ -33,11 +33,11 @@ while($row=mysqli_fetch_assoc($res))
     <?php
     echo 
     '<div  >
-    <a href=""><img class="petPic" src="'.$image.'"> </a></div>
-    ';
-    echo'<div class="textpic">
-    <p>Name:'.$type_pet.'</p>
+    <img class="petPic2" src="'.$image.'"> 
     </div>';
+    echo'<div class="text-display"><span class="textpic">
+    <p>Name:'.$type_pet.'</p>
+    </span></div>';
     ?>
         <h1>Are you sure the adoption</h1>
       <?php 

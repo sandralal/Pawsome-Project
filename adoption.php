@@ -39,19 +39,19 @@ while($row=mysqli_fetch_assoc($res))
     $type_pet=$row["type_of_pet"];
     $status=$row["status"];
     $image=$row["images"];
-    $adopt="<a class='confButton' href='adop_confirm.php?PetID={$petid}&userid={$userid}'>ADOPT NOW</a>";
-    $ado="<h2 class='ado'>Adopted</h2>";
+    $adopt="<a class='ado2' href='adop_confirm.php?PetID={$petid}&userid={$userid}'>ADOPT NOW</a>";
+    $ado="<h2 class='ado'>ADOPTED</h2>";
     echo 
-    '<div class="container" >
-    <div class="box">
-    
-       <img class="petPic" src="'.$image.'">
+    '<div class="content" >
+    <div class="onebox ">
+        <div class="twobox ">
+             <img class="petPic" src="'.$image.'">
        </div>
+    
         <div class="textpic">
-        <p>Name:'.$type_pet.'</p>
-        
+            <p>Name:'.$type_pet.'</p>
         </div>
-    </div>  ';
+     ';
 if($status=='adopted')
 {
     echo $ado;
@@ -60,14 +60,13 @@ else{
     echo $adopt;
 }
 
-echo'<br><br>';
+echo'</div> </div>  ';
 
 
 }
 
 ?>
-
-    
+   
 </main>
 </body>
 
