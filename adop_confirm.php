@@ -1,5 +1,7 @@
 <?php
+session_start();
 include("connect.php");
+$username=$_SESSION['username'];
 $PetID;
 $name;
 
@@ -16,6 +18,7 @@ while($row=mysqli_fetch_assoc($res))
     $type_pet=$row["type_of_pet"];
     $status=$row["status"];
     $image=$row["images"];
+    $place=$row['place_of_adoption'];
     
 }
 
@@ -27,27 +30,39 @@ while($row=mysqli_fetch_assoc($res))
     <link rel="stylesheet"
     href="adoption.css">
 </head>
+
+<style>
+        header{
+            top:-4px;
+        }
+        </style>
 <body>
+    <?php
+    include('header.php');?>
     <h1>ADOPTION CONFIRMATION</h1>
     
     <?php
     echo 
-    '<div  >
-    <img class="petPic2" src="'.$image.'"> 
-    </div>';
-    echo'<div class="text-display"><span class="textpic">
-    <p>Name:'.$type_pet.'</p>
-    </span></div>';
-    ?>
-        <h1>Are you sure the adoption</h1>
-      <?php 
+    '<div class="content">
+        <div class="oneBox" >
+            <div clas="twoBox">
+                <img class="petPic2" src="'.$image.'"> 
+            </div>';
+    echo'
+    <span class="textPic">
+            <p>Name:'.$type_pet.'</p>
+            <p>Place Of Rescue:'.$place.'</p>
+            <span>Are you sure the adoption?<br></span>';
+       
       $yes=" <a href='change.php?name=yes&PetID={$petid}&userid={$userid}' >Yes</a>";
-      $no=" <a href='change.php?name=no&PetID={$petid}' >No</a>";
+      $no=" <a href='adoption.php' >No</a>";
       echo $yes;
       echo $no;
+      echo'</span>    </div></div>';
+    ?>
 
        
-       ?>
+     
 
         
     

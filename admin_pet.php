@@ -22,24 +22,33 @@
 	
 	?>
     <html>
-        <body>
+        <head>
+            <link rel="stylesheet" href="admin.css">
+</head>
+<body >
 <h1>UPLOAD PET DETAILS</h1>
-    <form method="POST" action="#" enctype="multipart/form-data" >
-   
-   
-   <label>File Upload:</label><input type="file" name="file" /><br><br>
-   <label>Pet Type</label><input type="text" name="type"/><br><br>
-    <label>place of adoption:</label><input type="text" name="place"/><br><br>
-   <label>Status</label> 
-   <select name="status" id="status" placeholder="select option">
-    <option value="adopted">Adopted</option>
-    <option value="toadopt">To adopt</option>
-</select>
-    <br><br>
+ 
     
-   <input type="submit" name="submit"/>
-   </form>
-   <a href="admin_view_pets.php">VIEW PET DETAILS</a>
+<div class="petins">
+    
+    
+    <div class="formbox">
+        <form method="POST" action="#" enctype="multipart/form-data" >
+        <label>File Upload:</label><input type="file" name="file" /><br><br>
+        <label>Pet Type</label><input type="text" name="type"/><br><br>
+        <label>place of adoption:</label><input type="text" name="place"/><br><br>
+        <label>Status</label> 
+        <select name="status" id="status" placeholder="select option">
+        <option value="adopted">Adopted</option>
+        <option value="toadopt">To adopt</option>
+        </select>
+        <br><br>
+         <input type="submit" name="submit"/>
+</form>
+<a href="admin_view_pets.php">VIEW PET DETAILS</a>
+</div>
+        
+</div>
 </body>
 </html>
 

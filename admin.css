@@ -36,3 +36,15 @@ text-decoration: none;
     background: darkred;
     color:white;
 }
+body {
+   
+   background: url('admin-pet.jpg');
+
+}
+.formbox {
+    position: absolute;
+    background-color: antiquewhite;
+}
+.formbox input{
+    padding: 10px 10px;
+}

@@ -2,6 +2,7 @@
 <?php
 session_start();
 include("connect.php");
+$_SESSION['username']=$username;
 $userid=$_GET['userid'];
 $sql="select * from pet_details";
 $res=mysqli_query($conn,$sql);
@@ -43,12 +44,12 @@ while($row=mysqli_fetch_assoc($res))
     $ado="<h2 class='ado'>ADOPTED</h2>";
     echo 
     '<div class="content" >
-    <div class="onebox ">
-        <div class="twobox ">
+    <div class="onebox-ado ">
+        <div class="twobox-ado">
              <img class="petPic" src="'.$image.'">
        </div>
     
-        <div class="textpic">
+        <div class="textpic-ado">
             <p>Name:'.$type_pet.'</p>
         </div>
      ';

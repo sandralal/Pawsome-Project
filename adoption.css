@@ -18,9 +18,7 @@ h1{
   }
   
   a{
-    text-decoration: none;
-    
-    
+    text-decoration: none; 
 
   }
   .des {
@@ -36,15 +34,50 @@ h1{
    object-fit: cover;
   }
   
-  .textpic p{
+  .textpic-ado p{
     
     font-size: 30px;
    color: white;
    line-height: 60px;
    font-family: Arial;
   }
-  .text-display{
-    display: inline;
+  .textPic p
+  {
+    margin-left: 50px;
+    display: flex;
+  color: white;
+  line-height: 10px;
+  font-family: arial;
+
+  }
+  .textPic span{
+    font-family: arial;
+    line-height: 50px;
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+
+  }
+  .textPic a{
+    margin-left: 50px;
+   width: 100px;
+   height: 40px;
+   border-radius: 30px;
+   text-align: center;
+   background-color: aliceblue;
+   padding: 5px 10px;
+   font-size: 30px;
+   font-family: arial;
+   border: 2px solid black;
+   color:purple;
+   font-weight: 600;
+  }
+  .textPic a:hover{
+    background-color:  saddlebrown;
+    color: azure;
+    border: 2px solid white;
+    border-radius: 30px;
+    transform: scale(.75);
   }
   
   .container{
@@ -82,7 +115,7 @@ h1{
     color:  rgb(19 77 65);
     border-radius: 20px;
   }
-  .onebox{
+  .onebox-ado{
     float: left;
     height: 400px;
     width: 300px;
@@ -90,9 +123,28 @@ h1{
  align-items: center;
     margin-right: 50px;
     border-radius: 10px;
-    background-color: rgb(19 77 65);
+    background-color: rgb(107, 143, 136);
 }
-.twobox{
+.oneBox{
+  float: left;
+  height: 400px;
+  display: flex;
+  width: 50rem;
+padding: 30px 25px;
+
+align-items: center;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color:rgb(30, 95, 69);
+}
+.twobox-ado{
+  float: left;
+    height: 250px;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.twoBox{
   float: left;
     height: 250px;
     width: 300px;
@@ -109,4 +161,87 @@ h1{
 {
   height: 350px;
   width: 250px;
+  border: 3px solid white;
+  border-radius: 8px;
+}
+.text-display{
+  line-height: 10px;
+}
+.details{
+  display: flex;
+}
+.inputbox input{
+
+  margin-left: 60px;
+  padding: 15px 100px;
+  border-radius: 10px;
+  border: 2px solid green;
+  margin-bottom: 8px;
+  
+  
+  
+}
+.inputbox label{
+  padding-left: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(29, 102, 77);
+}
+.inputbox select{
+  margin-top: 5px;
+  margin-left: 80px;
+  border-radius: 5px;
+  border-color: maroon;
+  
+  padding: 10px 20px;
+}
+.details img{
+  margin-left: -10px;
+  height: 700px;
+  
+  background-size: cover;
+}
+.formbox{
+  margin-left: 0px;
+  
+  background-color:#f1f1f1;
+}
+.formbox h1{
+  margin-left: 10px;
+}
+.button{
+  position: absolute;
+  margin-left: 100px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: width.5s;
+  border-radius: .5s;
+}
+.button *{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  transition: opacity .5s;
+}
+.icon{
+  opacity: 0;
+}
+.button:focus{
+  width: 50px;
+  background-color:green;
+  border-radius: 50%;
+}
+.button:focus .text-button{
+  opacity: 0;
+}
+.button:focus .icon{
+  opacity: 1;
+  transition-delay: 1s;
 }
