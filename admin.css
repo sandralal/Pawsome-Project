@@ -37,8 +37,8 @@ text-decoration: none;
     color:white;
 }
 body {
-   
-   background: url('admin-pet.jpg');
+   background-size: cover;
+   background: url('admin-pet.jpg')no-repeat;
 
 }
 .formbox {
