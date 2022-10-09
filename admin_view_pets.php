@@ -8,7 +8,7 @@
 </body>
     </html>
     <?php
-include("connect.php");
+include("connection.php");
 $sql="select * from pet_details INNER JOIN sign_up on pet_details.userid=sign_up.userid;";
 $res=mysqli_query($conn,$sql);
  
